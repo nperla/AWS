@@ -1,0 +1,17 @@
+---
+- hosts: 
+  connection: 
+  gather_facts: 
+  tasks:
+    - name: Creating EC2 instance
+      ec2:
+         aws_access_key: ""
+         aws_secret_key: ""
+         instance_type: 
+         image: 
+         wait: 
+         region: 
+         count: 
+         instance_tags: 
+            name: 
+      register: 
