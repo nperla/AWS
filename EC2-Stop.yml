@@ -1,0 +1,14 @@
+---
+- hosts: 
+  gather_facts: 
+  connection: 
+  tasks:
+     - name: Stopping EC2 instance
+       ec2: 
+         instance_id: 
+         wait: 
+         region: 
+         state: stopped
+         assign_public_ip: 
+         aws_access_key: ""
+         aws_secret_key: ""
